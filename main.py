@@ -33,7 +33,8 @@ def fetch_and_send_news():
         send_message("⚠️ Geen nieuws gevonden")
     else:
         for art in articles:
-            send_message(f"📰 {art['title']}
+            message = f"📰 {art['title']}\n🔗 {art['url']}\n🕒 {art['publishedAt']}\n📡 Bron: {art['source']['name']}"
+send_message(message)
 🔗 {art['url']}")
 
 def periodic_news():
