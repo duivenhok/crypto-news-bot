@@ -35,7 +35,7 @@ def fetch_and_send_news():
         for art in articles:
             message = f"📰 {art['title']}\n🔗 {art['url']}\n🕒 {art['publishedAt']}\n📡 Bron: {art['source']['name']}"
 send_message(message)
-🔗 {art['url']}")
+ {art['url']}")
 
 def periodic_news():
     while True:
